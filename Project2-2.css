@@ -20,8 +20,33 @@ nav ul {
 }
 
 /* grid styles for page body */
-    
-    Body {
+
+
+<style>
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 100px;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 30%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: left;
+}
+</style>
+
+
+Body {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-areas: "header header"
@@ -30,7 +55,6 @@ nav ul {
                              "footer  footer";
         grid-column-gap: 15px;
 }
-
 
 body > header {
     grid-row: 1;
@@ -47,6 +71,10 @@ body > footer {grid-area: footer;}
 section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+body > header > nav li {
+    width: 20%;
 }
 
 section > h1 {
