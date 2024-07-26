@@ -14,10 +14,22 @@ nav ul {
     float: center;
     color: skyblue;
     text-align: center;
-    padding: 14px 16px;
+    padding: 3px 30px;
     text-decoration: none;
     background-color: mediumpurple
 }
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+}
+
 
 /* grid styles for page body */
 
